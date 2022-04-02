@@ -21,6 +21,8 @@
 - Github
 - Google
 - Poki
+- Telegram
+- Linkedin
 
 ## Código do Bot
 

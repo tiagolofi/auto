@@ -12,4 +12,3 @@ while True:
 	bot.close()
 
 	bot.quit()
-	

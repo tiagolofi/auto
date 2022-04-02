@@ -23,8 +23,8 @@ class BotNave(object):
 			'jogar': 'https://poki.com.br/g/repuls-io',
 			'trelo': 'https://trello.com/tiagomatos60/boards',
 			'música': 'https://open.spotify.com/artist/58oPVy7oihAEXE0Ott6JOf',
-			'telegram': 'https://web.telegram.org/k/'
-			'linkedin': 'https://www.linkedin.com/feed/'
+			'telegram': 'https://web.telegram.org/k/',
+			'link': 'https://www.linkedin.com/feed/'
 		}
 
 	def browser(self):
