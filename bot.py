@@ -1,8 +1,10 @@
 
 from botnave import BotNave
 
+bot = BotNave()
+
 while True:
 
-	bot = BotNave()
-
 	bot.browser()
+
+	bot.navegation()

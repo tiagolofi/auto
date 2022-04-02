@@ -24,4 +24,4 @@ class NaveVoice(object):
 
 		except UnknownValueError:
 
-			return False
+			pass
