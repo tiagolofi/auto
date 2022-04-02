@@ -8,3 +8,8 @@ while True:
 	bot.browser()
 
 	bot.navegation()
+
+	bot.close()
+
+	bot.quit()
+	

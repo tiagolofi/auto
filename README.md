@@ -8,6 +8,20 @@
 
 [**BotNave**](botnave.py)
 
+## Integrações
+
+- Whatsapp
+- Facebook
+- Instagram
+- Spotify
+- Netflix
+- Crunchyroll
+- YouTube
+- Trello
+- Github
+- Google
+- Poki
+
 ## Código do Bot
 
 ```python
@@ -16,9 +30,13 @@ from botnave import BotNave
 
 while True:
 
-	bot = BotNave()
-
 	bot.browser()
+
+	bot.navegation()
+
+	bot.close()
+
+	bot.quit()
 
 ```
 

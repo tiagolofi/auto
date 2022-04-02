@@ -9,7 +9,7 @@ class BotNave(object):
 	def __init__(self):
 		super(BotNave, self).__init__()
 		self.voice = NaveVoice()
-		self.PAUSE = 2
+		self.PAUSE = 0.5
 		self.dictionary = {
 			'whatsapp': 'https://web.whatsapp.com/',
 			'youtube': 'https://www.youtube.com/',
@@ -20,16 +20,18 @@ class BotNave(object):
 			'git': 'https://github.com/tiagolofi',
 			'instagram': 'https://www.instagram.com/',
 			'pesquisar': 'https://www.google.com.br/',
-			'jogar': 'https://poki.com.br/g/repuls-io'
+			'jogar': 'https://poki.com.br/g/repuls-io',
+			'trelo': 'https://trello.com/tiagomatos60/boards',
+			'música': 'https://open.spotify.com/artist/58oPVy7oihAEXE0Ott6JOf'
 		}
 
 	def browser(self):
 
-		web = self.voice.voice_to_text()
+		command = self.voice.voice_to_text()
 
-		if web == 'navegador':
+		if command == 'navegador':
 
-			print(web, '\n')
+			# print(web, '\n')
 
 			press('win')
 
@@ -43,21 +45,21 @@ class BotNave(object):
 
 	def navegation(self):
 
-		web = self.voice.voice_to_text()
+		command = self.voice.voice_to_text()
 
-		if web in list(self.dictionary.keys()):
+		if command in list(self.dictionary.keys()):
 
-			print(web, '\n')
+			# print(web, '\n')
 
 			hotkey('ctrl', 't')
 
 			sleep(2)
 
-			write(self.dictionary.get(web))
+			write(self.dictionary.get(command))
 
 			press('enter')
 
-			if web == 'pesquisar':
+			if command == 'pesquisar':
 
 				texto = self.voice.voice_to_text()
 
@@ -71,15 +73,27 @@ class BotNave(object):
 
 					press('enter')
 
-		elif web == 'fechar':
+	def close(self):
 
-			print(web, '\n')
+		command = self.voice.voice_to_text()
+
+		if command == 'fechar':
+
+			# print(web, '\n')
 
 			hotkey('ctrl', 'w')
 
-		elif web == 'encerrar':
+		else:
 
-			print(web, '\n')
+			pass
+
+	def quit(self):
+
+		command = self.voice.voice_to_text()
+
+		if command == 'encerrar':
+
+			# print(web, '\n')
 
 			exit()
 
