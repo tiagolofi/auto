@@ -22,7 +22,9 @@ class BotNave(object):
 			'pesquisar': 'https://www.google.com.br/',
 			'jogar': 'https://poki.com.br/g/repuls-io',
 			'trelo': 'https://trello.com/tiagomatos60/boards',
-			'música': 'https://open.spotify.com/artist/58oPVy7oihAEXE0Ott6JOf'
+			'música': 'https://open.spotify.com/artist/58oPVy7oihAEXE0Ott6JOf',
+			'telegram': 'https://web.telegram.org/k/'
+			'linkedin': 'https://www.linkedin.com/feed/'
 		}
 
 	def browser(self):
