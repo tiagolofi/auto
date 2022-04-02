@@ -1,3 +1,4 @@
+"""Source for BotNave"""
 
 from navevoice import NaveVoice
 from time import sleep
@@ -27,13 +28,11 @@ class BotNave(object):
 			'link': 'https://www.linkedin.com/feed/'
 		}
 
-	def browser(self):
+	def main(self):
 
 		command = self.voice.voice_to_text()
 
 		if command == 'navegador':
-
-			# print(web, '\n')
 
 			press('win')
 
@@ -41,21 +40,9 @@ class BotNave(object):
 
 			press('enter')
 
-		else:
-
-			pass
-
-	def navegation(self):
-
-		command = self.voice.voice_to_text()
-
-		if command in list(self.dictionary.keys()):
-
-			# print(web, '\n')
+		elif command in list(self.dictionary.keys()):
 
 			hotkey('ctrl', 't')
-
-			sleep(2)
 
 			write(self.dictionary.get(command))
 
@@ -75,27 +62,11 @@ class BotNave(object):
 
 					press('enter')
 
-	def close(self):
-
-		command = self.voice.voice_to_text()
-
-		if command == 'fechar':
-
-			# print(web, '\n')
+		elif command == 'fechar':
 
 			hotkey('ctrl', 'w')
 
-		else:
-
-			pass
-
-	def quit(self):
-
-		command = self.voice.voice_to_text()
-
-		if command == 'encerrar':
-
-			# print(web, '\n')
+		elif command == 'encerrar':
 
 			exit()
 

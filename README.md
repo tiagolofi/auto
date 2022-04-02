@@ -1,14 +1,14 @@
 # Automações com Python
 
-## Módulo de reconhecimento de voz
+### Módulo de reconhecimento de voz
 
 [**NaveVoice**](navevoice.py)
 
-## Módulo de navegação automatizada
+### Módulo de navegação automatizada
 
 [**BotNave**](botnave.py)
 
-## Integrações
+### Integrações
 
 - Whatsapp
 - Facebook
@@ -24,7 +24,7 @@
 - Telegram
 - Linkedin
 
-## Código do Bot
+### Código do Bot
 
 ```python
 
@@ -40,5 +40,11 @@ while True:
 
 	bot.quit()
 
+```
+
+### Compilando com Pyinstaller
+
+```
+pyinstaller --onefile -w --icon=imagebot.ico --splash botscreen.png bot.py
 ```
 
