@@ -17,7 +17,7 @@ class BotNave(object):
 			'twitter': 'https://twitter.com/home',
 			'facebook': 'https://www.facebook.com/',
 			'anime': 'https://www.crunchyroll.com/pt-br/videos/anime',
-			'git': 'https://github.com/tiagolofi',
+			'repositório': 'https://github.com/tiagolofi',
 			'instagram': 'https://www.instagram.com/',
 			'pesquisar': 'https://www.google.com.br/',
 			'jogar': 'https://poki.com.br/g/repuls-io',
