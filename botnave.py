@@ -4,6 +4,7 @@ from navevoice import NaveVoice
 from time import sleep
 from pyautogui import PAUSE, press, write, press, hotkey
 from sys import exit
+from playsound import playsound
 
 class BotNave(object):
 	"""docstring for BotNave"""
@@ -40,9 +41,13 @@ class BotNave(object):
 
 			press('enter')
 
+			playsound('audios/navegador.mp3')
+
 		elif command in list(self.dictionary.keys()):
 
 			hotkey('ctrl', 't')
+
+			playsound('audios/nova_pagina.mp3')
 
 			write(self.dictionary.get(command))
 
@@ -66,10 +71,16 @@ class BotNave(object):
 
 			hotkey('ctrl', 'w')
 
+			playsound('audios/guia_fechada.mp3')
+
 		elif command == 'encerrar':
 
 			exit()
 
-		else:
+		elif command == None:
 
 			pass
+
+		else:
+
+			playsound('audios/desculpas.mp3')

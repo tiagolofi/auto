@@ -30,21 +30,17 @@
 
 from botnave import BotNave
 
+bot = BotNave()
+
 while True:
 
-	bot.browser()
-
-	bot.navegation()
-
-	bot.close()
-
-	bot.quit()
+	bot.main()
 
 ```
 
 ### Compilando com Pyinstaller
 
 ```
-pyinstaller --onefile -w --icon=imagebot.ico --splash botscreen.png bot.py
+> pyinstaller --onefile -w --icon=imagebot.ico --splash botscreen.png bot.py
 ```
 
