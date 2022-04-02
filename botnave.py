@@ -11,6 +11,7 @@ class BotNave(object):
 	def __init__(self):
 		super(BotNave, self).__init__()
 		self.voice = NaveVoice()
+		self.PATH = 'C:/Users/usuario/Documents/Ambientes/AUTOMATION/auto/audios/'
 		self.PAUSE = 0.5
 		self.dictionary = {
 			'whatsapp': 'https://web.whatsapp.com/',
@@ -41,13 +42,13 @@ class BotNave(object):
 
 			press('enter')
 
-			playsound('audios/navegador.mp3')
+			playsound(self.PATH + 'navegador.mp3')
 
 		elif command in list(self.dictionary.keys()):
 
 			hotkey('ctrl', 't')
 
-			playsound('audios/nova_pagina.mp3')
+			playsound(self.PATH + 'nova_pagina.mp3')
 
 			write(self.dictionary.get(command))
 
@@ -71,7 +72,7 @@ class BotNave(object):
 
 			hotkey('ctrl', 'w')
 
-			playsound('audios/guia_fechada.mp3')
+			playsound(self.PATH + 'guia_fechada.mp3')
 
 		elif command == 'encerrar':
 
@@ -83,4 +84,4 @@ class BotNave(object):
 
 		else:
 
-			playsound('audios/desculpas.mp3')
+			playsound(self.PATH + 'desculpas.mp3')
