@@ -2,6 +2,7 @@
 from navevoice import NaveVoice
 from time import sleep
 from pyautogui import PAUSE, press, write, press, hotkey
+from sys import exit
 
 class BotNave(object):
 	"""docstring for BotNave"""
@@ -24,22 +25,10 @@ class BotNave(object):
 
 		web = self.voice.voice_to_text()
 
+		print(web, '\n')
+
 		if web in list(self.dictionary.keys()):
 	
-			press('win')
-
-			write('google chrome')
-
-			press('enter')
-
-			sleep(2)
-
-			write(self.dictionary.get(web))
-
-			press('enter')
-
-		elif web == 'pesquisar':
-
 			press('win')
 
 			write('google chrome')
@@ -55,6 +44,10 @@ class BotNave(object):
 		elif web == 'fechar guia':
 
 			hotkey('ctrl', 'w')
+
+		elif web == 'encerrar':
+
+			exit()
 
 		else:
 
