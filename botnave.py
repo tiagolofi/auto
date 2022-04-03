@@ -58,7 +58,7 @@ class BotNave(object):
 
 				texto = self.voice.voice_to_text()
 
-				if len(texto) == 0:
+				if texto == None:
 
 					pass
 
