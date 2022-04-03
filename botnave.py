@@ -42,13 +42,13 @@ class BotNave(object):
 
 			press('enter')
 
-			playsound(self.PATH + 'navegador.mp3')
+			playsound(self.PATH + '3.mp3')
 
 		elif command in list(self.dictionary.keys()):
 
 			hotkey('ctrl', 't')
 
-			playsound(self.PATH + 'nova_pagina.mp3')
+			playsound(self.PATH + '4.mp3')
 
 			write(self.dictionary.get(command))
 
@@ -72,7 +72,7 @@ class BotNave(object):
 
 			hotkey('ctrl', 'w')
 
-			playsound(self.PATH + 'guia_fechada.mp3')
+			playsound(self.PATH + '2.mp3')
 
 		elif command == 'encerrar':
 
@@ -84,4 +84,4 @@ class BotNave(object):
 
 		else:
 
-			playsound(self.PATH + 'desculpas.mp3')
+			playsound(self.PATH + '1.mp3')
