@@ -34,7 +34,11 @@ class BotNave(object):
 
 		command = self.voice.voice_to_text()
 
-		if command == 'navegador':
+		if command == None:
+
+			pass
+
+		elif command == 'navegador':
 
 			press('win')
 
@@ -77,10 +81,6 @@ class BotNave(object):
 		elif command == 'encerrar':
 
 			exit()
-
-		elif command == None:
-
-			pass
 
 		else:
 
